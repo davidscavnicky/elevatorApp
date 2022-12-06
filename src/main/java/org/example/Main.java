@@ -18,16 +18,27 @@ class Elevator {
     public static int originFloor;
 
     public void runElevator() {
-        originFloor = getRandomNumberInRange(0, 10);
+        originFloor = getRandomNumberInRange(0, maxFloor);
 
         System.out.println("The generated building has " + maxFloor + " floors.");
+        System.out.println("At the moment, the elevator is on the " + originFloor + "th floor.");
         System.out.println("Please, write your floor's number: ");
         int currentFloor = readFloorInteger();
         if (originFloor == currentFloor) {
-            System.out.println("The doors are opened.");
+            System.out.println("The doors are opened, please enter your next destination.");
+            System.out.println("Please, write your floor's number: ");
+            int nextFloor = readFloorInteger();
+            movement(nextFloor);
+            System.out.println("You have arrived at your destination.");
+        } else {
+            movement(currentFloor);
         }
 
     }
+    private void movementInTheElevator() {
+
+    }
+
     private void movement(int currentFloor) {
         if (currentFloor < originFloor) {
             moveDown(currentFloor);
