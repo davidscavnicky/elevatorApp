@@ -23,6 +23,30 @@ class Elevator {
         System.out.println("The generated building has " + maxFloor + " floors.");
         System.out.println("Please, write your floor's number: ");
         int currentFloor = readFloorInteger();
+        if (originFloor == currentFloor) {
+            System.out.println("The doors are opened.");
+        }
+
+    }
+    private void movement(int currentFloor) {
+        if (currentFloor < originFloor) {
+            moveDown(currentFloor);
+        }else {
+            moveUp(currentFloor);
+        }
+    }
+    private void moveUp(int currentFloor){
+        while (originFloor < currentFloor) {
+            originFloor++;
+            System.out.println(originFloor);
+        }
+    }
+
+    private void moveDown(int currentFloor){
+        while (originFloor > currentFloor) {
+            originFloor--;
+            System.out.println(originFloor);
+        }
     }
 
 
