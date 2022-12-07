@@ -14,8 +14,8 @@ public class Main {
 // customer and thereafter sends the lift to the customer's desired location
 
 class Elevator {
-//    public int floor = 0;
-    public static int maxFloor = getRandomNumberInRange(4,10);
+    public static int minimumFloorNumber = 4;
+    public static int maxFloor = getRandomNumberInRange(minimumFloorNumber,10);
     public static int originFloor;
 
     public void runElevator() {
@@ -42,13 +42,11 @@ class Elevator {
     }
 
     private void movementOfTheElevator(int currentFloor) {
-//        direction = directionChoice(currentFloor);
         switch(directionChoice(currentFloor)) {
             case UP:
                 System.out.println("The elevator is on the way UP.");
                 while (originFloor < currentFloor) {
                     originFloor++;
-//                    System.out.println(originFloor);
                     printAndSleep(originFloor);
                 }
                 break;
@@ -56,7 +54,6 @@ class Elevator {
                 System.out.println("The elevator is on the way DOWN.");
                 while (originFloor > currentFloor) {
                     originFloor--;
-//                    System.out.println(originFloor);
                     printAndSleep(originFloor);
                 }
         }
@@ -73,7 +70,7 @@ class Elevator {
     private void printAndSleep(int floorNumber) {
         System.out.println(floorNumber);
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
