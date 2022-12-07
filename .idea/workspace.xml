@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df3a81d4-5bcf-4ec6-b8e4-f14097aedf78" name="Changes" comment="BufferedReader(new InputStreamReader( instead of scanner, since trying to implement functionality to stop between origin floor and destination, on second input">
+    <list default="true" id="df3a81d4-5bcf-4ec6-b8e4-f14097aedf78" name="Changes" comment="reduction of functions. Movement (moveUp &amp; moveDown) functions not needed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
@@ -63,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670340350328</updated>
       <workItem from="1670340352765" duration="9620000" />
-      <workItem from="1670412037325" duration="9603000" />
+      <workItem from="1670412037325" duration="10376000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1670340412092</created>
@@ -135,11 +135,29 @@
       <option name="project" value="LOCAL" />
       <updated>1670419882192</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="reduction of functions. Movement (moveUp &amp; moveDown) functions not needed.">
+      <created>1670422345068</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670422345068</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
@@ -151,6 +169,7 @@
     <MESSAGE value="added movementInTheElevator() for two cases : when an elevator is on the same floor as the person &amp; when it needs to travel to the person" />
     <MESSAGE value="tidying up" />
     <MESSAGE value="BufferedReader(new InputStreamReader( instead of scanner, since trying to implement functionality to stop between origin floor and destination, on second input" />
-    <option name="LAST_COMMIT_MESSAGE" value="BufferedReader(new InputStreamReader( instead of scanner, since trying to implement functionality to stop between origin floor and destination, on second input" />
+    <MESSAGE value="reduction of functions. Movement (moveUp &amp; moveDown) functions not needed." />
+    <option name="LAST_COMMIT_MESSAGE" value="reduction of functions. Movement (moveUp &amp; moveDown) functions not needed." />
   </component>
 </project>
