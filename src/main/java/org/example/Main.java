@@ -1,5 +1,7 @@
 package org.example;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -51,6 +53,11 @@ class Elevator {
         while (originFloor < currentFloor) {
             originFloor++;
             System.out.println(originFloor);
+            try {
+                Thread.sleep(2500);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
@@ -58,6 +65,11 @@ class Elevator {
         while (originFloor > currentFloor) {
             originFloor--;
             System.out.println(originFloor);
+            try {
+                Thread.sleep(2500);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
@@ -70,16 +82,27 @@ class Elevator {
         return r.nextInt((max - min) + 1) + min;
     }
 
+//    private int readFloorInteger() {
+//        int someInput = 0;
+//        try {
+//            Scanner scanner = new Scanner(System.in);
+//            someInput = scanner.nextInt();
+//        } catch (Exception e) {
+//            System.out.println("The input value is not a valid integer.");
+//            System.exit(0);
+//        }
+//        return someInput;
+//    }
     private int readFloorInteger() {
-        int someInput = 0;
+        String someInput = null;
         try {
-            Scanner scanner = new Scanner(System.in);
-            someInput = scanner.nextInt();
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+            someInput = bufferedReader.readLine();
         } catch (Exception e) {
             System.out.println("The input value is not a valid integer.");
             System.exit(0);
         }
-        return someInput;
+        return Integer.parseInt(someInput);
     }
 
 }
