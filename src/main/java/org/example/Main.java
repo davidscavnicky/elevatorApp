@@ -4,14 +4,15 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Random;
 
+// the app calls elevator from random position to the
+// customer and thereafter sends the lift to the customer's desired location
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello to the elevator app!");
         new Elevator().runElevator();
     }
 }
-// the app calls elevator from random position to the
-// customer and thereafter sends the lift to the customer's desired location
 
 class Elevator {
     public static int minimumFloorNumber = 4;
