@@ -23,20 +23,21 @@ class Elevator {
         System.out.println("The generated building has " + maxFloor + " floors.");
         System.out.println("At the moment, the elevator is on the " + originFloor + "th floor.");
         System.out.println("Please, write your floor's number: ");
+
         int currentFloor = readFloorInteger();
+
         if (originFloor == currentFloor) {
-            System.out.println("The doors are opened, please enter your next destination.");
-            System.out.println("Please, write your floor's number: ");
-            int nextFloor = readFloorInteger();
-            movement(nextFloor);
-            System.out.println("You have arrived at your destination.");
+            movementInTheElevator();
         } else {
             movement(currentFloor);
+            movementInTheElevator();
         }
-
     }
     private void movementInTheElevator() {
-
+        System.out.println("The doors are opened. Please, enter your destination's floor: ");
+        int nextFloor = readFloorInteger();
+        movement(nextFloor);
+        System.out.println("You have arrived at your destination.");
     }
 
     private void movement(int currentFloor) {
@@ -88,8 +89,6 @@ class Elevator {
         }
         return someInput;
     }
-
-
 
 }
 
