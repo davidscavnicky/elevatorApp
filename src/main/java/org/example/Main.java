@@ -3,6 +3,7 @@ package org.example;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Random;
+import java.util.Scanner;
 
 // the app calls elevator from random position to the
 // customer and thereafter sends the lift to the customer's desired location
@@ -59,6 +60,7 @@ class Elevator {
                 }
         }
     }
+
     private Direction directionChoice(int currentFloor){
         int change = currentFloor - originFloor;
         if (change >0) {
@@ -87,15 +89,22 @@ class Elevator {
 
     private int readFloorInteger() {
         String someInput = null;
+        int integerInput = 0;
         try {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             someInput = bufferedReader.readLine();
+            integerInput = Integer.parseInt(someInput);
         } catch (Exception e) {
             System.out.println("The input value is not a valid integer.");
             System.exit(0);
+        } if (integerInput > maxFloor){
+            System.out.println("The input value can't be greater than maximum number of floors.");
+            System.exit(0);
         }
-        return Integer.parseInt(someInput);
+        return integerInput;
     }
+
+
 
     enum Direction {
         UP,DOWN
