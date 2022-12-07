@@ -60,7 +60,6 @@ class Elevator {
         }
     }
 
-
     private static int getRandomNumberInRange(int min, int max) {
         if (min >= max) {
             throw new IllegalArgumentException("max must be greater than min");
@@ -71,8 +70,23 @@ class Elevator {
     }
 
     private int readFloorInteger() {
-        Scanner keyboard = new Scanner(System.in);
-        return keyboard.nextInt();
+//        int someInput;
+//        Scanner scanner = new Scanner(System.in);
+//        someInput = scanner.nextInt();
+//        return someInput;
+
+//        int someInput;
+//        Scanner scanner = new Scanner(System.in);
+        int someInput = 0;
+        try {
+            Scanner scanner = new Scanner(System.in);
+            someInput = scanner.nextInt();
+//            return someInput;
+        } catch (Exception e) {
+            System.out.println("The input value is not a valid integer.");
+            System.exit(0);
+        }
+        return someInput;
     }
 
 
