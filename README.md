@@ -28,4 +28,4 @@ Two basic options - either elevator is in the same location as the customer or i
 
 run the program and answer the sentences
 
-note: upon wrong input exceptions terminate program with a describing sentence, the app needs to be rerun to try different inputs
+note: upon wrong input exception, program terminates with a describing sentence, the app needs to be rerun to try different inputs
