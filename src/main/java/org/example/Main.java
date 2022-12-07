@@ -3,7 +3,6 @@ package org.example;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Random;
-import java.util.Scanner;
 
 // the app calls elevator from random position to the
 // customer and thereafter sends the lift to the customer's desired location
