@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df3a81d4-5bcf-4ec6-b8e4-f14097aedf78" name="Changes" comment="added movementInTheElevator() for two cases : when an elevator is on the same floor as the person &amp; when it needs to travel to the person" />
+    <list default="true" id="df3a81d4-5bcf-4ec6-b8e4-f14097aedf78" name="Changes" comment="BufferedReader(new InputStreamReader( instead of scanner, since trying to implement functionality to stop between origin floor and destination, on second input">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670340350328</updated>
       <workItem from="1670340352765" duration="9620000" />
-      <workItem from="1670412037325" duration="3010000" />
+      <workItem from="1670412037325" duration="9603000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1670340412092</created>
@@ -118,7 +121,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670415012772</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="tidying up">
+      <created>1670415337563</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670415337563</updated>
+    </task>
+    <task id="LOCAL-00010" summary="BufferedReader(new InputStreamReader( instead of scanner, since trying to implement functionality to stop between origin floor and destination, on second input">
+      <created>1670419882192</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670419882192</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +149,8 @@
     <MESSAGE value="new function movementInTheElevator() might be needed" />
     <MESSAGE value="catching incorrect input" />
     <MESSAGE value="added movementInTheElevator() for two cases : when an elevator is on the same floor as the person &amp; when it needs to travel to the person" />
-    <option name="LAST_COMMIT_MESSAGE" value="added movementInTheElevator() for two cases : when an elevator is on the same floor as the person &amp; when it needs to travel to the person" />
+    <MESSAGE value="tidying up" />
+    <MESSAGE value="BufferedReader(new InputStreamReader( instead of scanner, since trying to implement functionality to stop between origin floor and destination, on second input" />
+    <option name="LAST_COMMIT_MESSAGE" value="BufferedReader(new InputStreamReader( instead of scanner, since trying to implement functionality to stop between origin floor and destination, on second input" />
   </component>
 </project>

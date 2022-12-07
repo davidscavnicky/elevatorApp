@@ -3,7 +3,6 @@ package org.example;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,14 +30,14 @@ class Elevator {
         if (originFloor == currentFloor) {
             movementInTheElevator();
         } else {
-            movement(currentFloor);
+            movementOfTheElevator(currentFloor);
             movementInTheElevator();
         }
     }
     private void movementInTheElevator() {
         System.out.println("The doors are opened. Please, enter your destination's floor: ");
         int nextFloor = readFloorInteger();
-        movement(nextFloor);
+        movementOfTheElevator(nextFloor);
         System.out.println("You have arrived at your destination.");
     }
 
@@ -60,6 +59,33 @@ class Elevator {
             }
         }
     }
+    private void movementOfTheElevator(int currentFloor) {
+//        direction = directionChoice(currentFloor);
+        switch(directionChoice(currentFloor)) {
+            case UP:
+                System.out.println("The elevator is on the way UP.");
+                while (originFloor < currentFloor) {
+                    originFloor++;
+                    System.out.println(originFloor);
+                }
+                break;
+            case DOWN:
+                System.out.println("The elevator is on the way DOWN.");
+                while (originFloor > currentFloor) {
+                    originFloor--;
+                    System.out.println(originFloor);
+                }
+        }
+    }
+    private Direction directionChoice(int currentFloor){
+        int change = currentFloor - originFloor;
+        if (change >0) {
+            return Direction.UP;
+        } else {
+            return Direction.DOWN;
+        }
+    }
+
 
     private void moveDown(int currentFloor){
         while (originFloor > currentFloor) {
@@ -93,6 +119,7 @@ class Elevator {
 //        }
 //        return someInput;
 //    }
+
     private int readFloorInteger() {
         String someInput = null;
         try {
@@ -105,8 +132,8 @@ class Elevator {
         return Integer.parseInt(someInput);
     }
 
-}
+    enum Direction {
+        UP,DOWN
+    }
 
-enum Direction {
-    UP,DOWN
 }
