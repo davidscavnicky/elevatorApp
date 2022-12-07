@@ -1,5 +1,5 @@
 # elevatorApp
-Visma project intro to bootcamp:
+Visma project intro to bootcamp.
 
 ## Author
  - [David Scavnicky](https://github.com/Scadav00)
