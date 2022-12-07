@@ -10,7 +10,7 @@ public class Main {
     }
 }
 // the app calls elevator from random position to the
-// customer and thereafter sends the lift to desired location
+// customer and thereafter sends the lift to the desired location
 
 class Elevator {
 //    public int floor = 0;
@@ -71,18 +71,10 @@ class Elevator {
     }
 
     private int readFloorInteger() {
-//        int someInput;
-//        Scanner scanner = new Scanner(System.in);
-//        someInput = scanner.nextInt();
-//        return someInput;
-
-//        int someInput;
-//        Scanner scanner = new Scanner(System.in);
         int someInput = 0;
         try {
             Scanner scanner = new Scanner(System.in);
             someInput = scanner.nextInt();
-//            return someInput;
         } catch (Exception e) {
             System.out.println("The input value is not a valid integer.");
             System.exit(0);
