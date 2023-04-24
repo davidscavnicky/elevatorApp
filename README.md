@@ -1,8 +1,6 @@
 # elevatorApp
 Project intro by DAVID SCAVNICKY. with written challenge. non thread solution
 
-BRIEF DESCRIPTION OF THE PROBLEM
-
 ## Author
  - [David Scavnicky](https://github.com/Scadav00)
  
